@@ -14,8 +14,8 @@ export class ApiService {
     private _http: HttpClient
   ) { }
 
-    getInvocador(): Observable<HttpResponse<Invocador>> {
-      return this._http.get<Invocador>(`${api}/invocador`, {observe: 'response'});
+    getInvocador(nickName: string): Observable<HttpResponse<Invocador>> {
+      return this._http.get<Invocador>(`${api}/invocador/${nickName}`, {observe: 'response'});
     }
 
 }

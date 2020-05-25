@@ -1,5 +1,5 @@
 export class Invocador {
-    nome: String;
+    nomeInvocador: String;
     level: number;
     icone: number;
     filas: [];
