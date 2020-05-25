@@ -1,8 +1,15 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
+// Components
+import { InvocadorComponent } from './invocador/invocador.component'
 
-const routes: Routes = [];
+const routes: Routes = [
+  {
+    path: 'invocador',
+    component: InvocadorComponent
+  }
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
