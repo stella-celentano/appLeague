@@ -7,7 +7,8 @@ import { InvocadorComponent } from './invocador/invocador.component'
 const routes: Routes = [
   {
     path: 'invocador',
-    component: InvocadorComponent
+    component: InvocadorComponent,
+    data: { title: 'Invocador' }
   }
 ];
 
